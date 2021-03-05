@@ -3,7 +3,7 @@
 ### 前言
 
 + 之前和同学合作项目时偷懒使用gitKraken这一git图形化界面，基本满足了使用需求（唯一的好处是git的一些基本概念挺熟悉了
-+ 但这次旁听OS课的配套项目是private项目，gitKraken免费版不支持，故速成了git
++ 但这次旁听OS课（网课学的太水了）的配套项目是private项目，gitKraken免费版不支持，故速成了git
 + 参考：[廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
 ### 本地仓库命令
@@ -144,6 +144,7 @@ git branch
 ```
 
 + 合并分支
+  + 可能发生冲突，git会在文件中标识，需要自己在本地处理后重新commit
 
 ``` cmake
 git merge <分支名>
@@ -155,9 +156,11 @@ git merge <分支名>
 git branch -d <分支名>
 ```
 
-+ 冲突解决
++ 分支管理策略
+  + git默认使用fast forward进行合并，在没有冲突的时候仅移动指针来完成任务，新合并删除分支后可能丢掉信息，fast forward
+  + 使用--no-ff -m <注释>参数在
 
 ``` cmake
-
+git 
 ```
 
