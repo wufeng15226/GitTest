@@ -128,13 +128,13 @@ git clone git@github.com:wufeng15226/GitTest
 
 ### 分支管理
 
-+ 创建并跳转到新分支dev
++ 创建并跳转到新分支
 
 ``` cmake
-git checkout -b dev
+git switch -c <分支名>
 # 等同于下面两个命令
-# git branch dev
-# git checkout dev
+# git branch <分支名> # 新建分支
+# git switch <分支名> # 切换分支
 ```
 
 + 查看当前分支
@@ -143,4 +143,21 @@ git checkout -b dev
 git branch
 ```
 
-23333
++ 合并分支
+
+``` cmake
+git merge <分支名>
+```
+
++ 删除分支
+
+``` cmake
+git branch -d <分支名>
+```
+
++ 冲突解决
+
+``` cmake
+
+```
+
