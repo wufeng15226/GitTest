@@ -34,13 +34,13 @@ git commit -m "提交备注"
 git commit -am "提交备注"
 ```
 
-+ 查看仓库状态
++ 查看仓库状态，对比本地工作区和暂存区的不同
 
 ```cmake
 git status
 ```
 
-+ 查看本地工作区和暂存区的不同，注意只会查看已经add的文件
++ 查看本地工作区和暂存区的不同，和git status相比只会查看已经add的文件
 
 ``` cmake
 git diff
