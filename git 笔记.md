@@ -2,11 +2,11 @@
 
 ### 前言
 
-+ 之前和同学合作项目时偷懒使用gitKraken这一git图形化界面，基本满足了使用需求
-+ 但这次旁听OS课的配套项目是私人项目，gitKraken免费版无法使用，想了想也该好好学习git了
++ 之前和同学合作项目时偷懒使用gitKraken这一git图形化界面，基本满足了使用需求（唯一的好处是git的一些基本概念挺熟悉了
++ 但这次旁听OS课的配套项目是private项目，gitKraken免费版不支持，故速成了git
 + 参考：[廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
-### 命令
+### 本地仓库命令
 
 + git 用户设置
   + 这里使用了ssh秘钥登入
@@ -117,5 +117,29 @@ git push -u origin main
 
 ``` cmake
  git remote rm origin
+```
+
++ 克隆远程库
+  + 可以使用SSH或HTTPS来下载，但SSH较快
+
+```cmake
+git clone git@github.com:wufeng15226/GitTest
+```
+
+### 分支管理
+
++ 创建并跳转到新分支dev
+
+``` cmake
+git checkout -b dev
+# 等同于下面两个命令
+# git branch dev
+# git checkout dev
+```
+
++ 查看当前分支
+
+``` cmake
+git branch
 ```
 
