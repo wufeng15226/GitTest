@@ -97,4 +97,11 @@ git rm <文件名>
 
 ### 远程仓库
 
++ 添加远程仓库GitTest
+  + wufeng15226为我的用户名
+
+``` cmake
+git remote add origin git@github.com:wufeng15226/GitTest
+```
+
 + 
