@@ -97,11 +97,25 @@ git rm <文件名>
 
 ### 远程仓库
 
-+ 添加远程仓库GitTest
-  + wufeng15226为我的用户名
++ 添加远程仓库
+  + wufeng15226为我的用户名，newTest为远程仓库名，可以和工作区目录名不同
+  + origin一般表示远程分支
 
 ``` cmake
-git remote add origin git@github.com:wufeng15226/GitTest
+git remote add origin git@github.com:wufeng15226/newTest.git
 ```
 
-+ 
++ 把本地仓库分支推到远程分支
+  + -u参数会关联本地的main分支和远程分支origin/main，方便以后简化命令
+
+``` cmake
+git push -u origin main
+```
+
++ 删除远程仓库
+  + 只是接触关联关系，远程库并没有改动
+
+``` cmake
+ git remote rm origin
+```
+
